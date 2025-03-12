@@ -1,12 +1,16 @@
-import { Component,} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input,} from '@angular/core';
 
 @Component({
   selector: 'app-card',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
 export class CardComponent {
+
+  
+@Input()vista:boolean=false
 
   products: any[] = [
     {

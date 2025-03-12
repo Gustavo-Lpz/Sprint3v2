@@ -13,4 +13,13 @@ import { CardsContainerComponent } from '../cards-container/cards-container.comp
 })
 export class HomeComponent {
 
+
+  fnDesdeElPadre(vista:boolean){
+    console.log("Holi desde el padre",vista)
+    this.cambioVista=vista
+  }
+
+  cambioVista:boolean=true 
+  
+
 }

@@ -7,9 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './button.component.css'
 })
 export class ButtonComponent {
-  @Output() button:EventEmitter<string> = new EventEmitter<string>();
+  @Output() button= new EventEmitter<boolean>();
 
-  change():void{
-    this.button.emit('click al boton')
+  change(vista:boolean):void{
+    this.button.emit(vista)
+    console.log("Holi dsde el hijo", vista)
   }
 }
